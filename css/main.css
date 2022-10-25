@@ -1,0 +1,86 @@
+/* variables */
+:root {
+    --background_color: black;
+    --text_color: aliceblue;
+    --text_color_opp: black;
+    --primary_color: #4F51DF;
+    --second_color: #332E6E;
+}
+
+/* :root {
+    --background_color: black;
+    --text_color: aliceblue;
+    --primary_color: #4F51DF;
+    --second_color: #332E6E;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background_color);
+    color: var(--text_color);
+    font-family: 'Open Sans';
+    scroll-behavior: smooth;
+}
+
+.nav {
+    background-color: var(--primary_color);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.nav-item {
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text_color);
+}
+
+#hero_section {
+    background-color: var(--second_color);
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.primary-btn {
+    background-color: var(--primary_color);
+    background-image: linear-gradient(90deg, rgba(0,0,0,0), rgba(255, 255, 255, 0.4), rgba(0,0,0,0));
+    background-size: 400%;
+    color: var(--text_color);
+    min-width: 20vw;
+    height: 5vh;
+    border-radius: 4px;
+    font-size: medium;
+    background-position: 100%;
+    transition: 0.7s;
+
+}
+
+.btn-shiny-hover:hover {
+    transition: 0.5s;
+    background-position: 0%;
+}
+
+
