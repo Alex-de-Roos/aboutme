@@ -7,8 +7,8 @@
     --text_color_opp: black;
     --primary_color: #4F51DF;
     --second_color: #332E6E;
-    --card_color_low: rgba(255,255,255,32%);
-    --card_color_med: rgba(255,255,255,48%);
+    --card_color_low: rgba(255,255,255,10%);
+    --card_color_med: rgba(255,255,255,18%);
 }
 
 * {
@@ -127,7 +127,7 @@ h1 {
 .cardTr {
     background-color: var(--card_color_low);
     padding: 4em;
-    border-radius: 4%;
+    border-radius: 4px;
 }
 
 .cardTr:hover {

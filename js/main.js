@@ -14,4 +14,7 @@ function showMenu() {
     navbar.classList.toggle('hideNav');
 }
 
-//
+//hovering mouse gradient
+function gradientHover() {
+    
+}
