@@ -21,6 +21,8 @@ body {
     font-family: 'Open Sans';
 }
 
+/* navbar  */
+/* items left */
 .nav {
     background-color: var(--second_color);
     height: 64px;
@@ -37,9 +39,6 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    gap: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 a:hover {
@@ -51,6 +50,42 @@ a {
     color: var(--text_color_med);
 }
 
+.nav-item {
+    transition: 0.2s;
+    padding: 1em;
+}
+
+.nav-item:hover {
+    background-color: var(--primary_color);
+}
+
+/* items right / menu button  */
+#menu-button {
+    cursor: pointer;
+    padding: 1em;
+}
+
+.bar {
+    background-color: var(--white_color_med);
+    width: 30px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+/* hero page */
 h1 {
     color: var(--text_color_high); 
 }
@@ -64,6 +99,7 @@ h1 {
     align-items: center;
 }
 
+/* sectioning */
 .divDefault {
     display: flex;
     justify-content: center;
@@ -71,6 +107,7 @@ h1 {
     min-height: calc(100vh - 64px);
 }
 
+/* button styling  */
 .primary-btn {
     background-color: var(--primary_color);
     background-image: linear-gradient(90deg, rgba(0,0,0,0), rgba(255, 255, 255, 0.4), rgba(0,0,0,0));
