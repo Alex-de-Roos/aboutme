@@ -1,35 +1,29 @@
 /* variables */
 :root {
-    --background_color: black;
-    --text_color: aliceblue;
+    --background_color: #121212;
+    --white_color_high: rgba(255,255,255,87%);
+    --white_color_med: rgba(255,255,255,60%);
+    --white_color_low: rgba(255,255,255,38%);
     --text_color_opp: black;
     --primary_color: #4F51DF;
     --second_color: #332E6E;
-    --switch_theme: darkblue;
 }
-
-/* :root {
-    --background_color: black;
-    --text_color: aliceblue;
-    --primary_color: #4F51DF;
-    --second_color: #332E6E;
-} */
 
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--background_color);
-    color: var(--text_color);
+    color: var(--white_color_med);
     font-family: 'Open Sans';
-    scroll-behavior: smooth;
 }
 
 .nav {
-    background-color: var(--primary_color);
-    height: 10vh;
+    background-color: var(--second_color);
+    height: 64px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -50,74 +44,44 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--text_color);
+    color: var(--text_color_med) !important;
 }
 
-#switcher {
-    background-color: var(--switch_theme);
-    width: 60px;
-    height: 30px;
-    border-radius: 20px;
-    cursor: pointer;
-    overflow: hidden;
+a:hover {
+    color: var(--text_color_high);
 }
 
-#switcher #inner-switch {
-    background-color: white;
-    position: relative;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    margin: 2px;
-    transition: all 0.6s;
-}
-
-#switcher #inner-switch::before {
-    content: "";
-    position: absolute;
-    left: -60%;
-    width: 100%;
-    height: 100%;
-    background-color: darkblue;
-    border-radius: 50%;
-    transform: scale(0);
-}
-
-#night {
-    display: block;
-}
-
-#day {
-    display: none;
+h1 {
+    color: var(--text_color_high) !important; 
 }
 
 #hero_section {
-    background-color: var(--second_color);
+    background-color: var(--background_color);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.tempDiv {
+.divDefault {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: calc(100vh - 64px);
 }
 
 .primary-btn {
     background-color: var(--primary_color);
     background-image: linear-gradient(90deg, rgba(0,0,0,0), rgba(255, 255, 255, 0.4), rgba(0,0,0,0));
     background-size: 400%;
-    color: var(--text_color);
+    color: var(--white_color_high);
     min-width: 20vw;
     height: 5vh;
     border-radius: 4px;
     font-size: medium;
     background-position: 100%;
     transition: 0.7s;
-
+    cursor: pointer;
 }
 
 .btn-shiny-hover:hover {
