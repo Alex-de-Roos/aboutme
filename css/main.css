@@ -42,21 +42,22 @@ body {
     margin-right: 1em;
 }
 
-a {
-    text-decoration: none;
-    color: var(--text_color_med) !important;
+a:hover {
+    color: var(--white_color_high);
 }
 
-a:hover {
-    color: var(--text_color_high);
+a {
+    text-decoration: none;
+    color: var(--text_color_med);
 }
 
 h1 {
-    color: var(--text_color_high) !important; 
+    color: var(--text_color_high); 
 }
 
 #hero_section {
     background-color: var(--background_color);
+    color: white;
     min-height: 100vh;
     display: flex;
     justify-content: center;
